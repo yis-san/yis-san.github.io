@@ -1,0 +1,35 @@
+body {
+    background-image: url(../backgrounds/main.jpg);
+}
+h1 {
+    margin: 0;
+    font-size: 60px;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.container {
+    height: 200px;
+    position: relative;
+    border: 3px solid black;
+}
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 25%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+button {
+    background-color: #2E2E2E;
+    font-size: 20px;
+    border-radius: 60px;
+    margin: 30px;
+    border: 0px;
+    height: 100px;
+    width: 200px;
+}
