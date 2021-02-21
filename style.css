@@ -1,0 +1,57 @@
+html {
+    background-image: url("https://newevolutiondesigns.com/images/freebies/orange-wallpaper-7.jpg");
+}
+.tg, #tg {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+.tg td, #tg td{
+    border-color:black;
+    border-style:solid;
+    border-width:1px;
+    font-family:Arial, sans-serif;
+    font-size:14px;
+    overflow:hidden;
+    padding:10px 5px;
+    word-break:normal;
+}
+.tg th, #tg th{
+    border-color:black;
+    border-style:solid;
+    border-width:1px;
+    font-family:Arial, sans-serif;
+    font-size:14px;
+    font-weight:normal;
+    overflow:hidden;
+    padding:10px 5px;
+    word-break:normal;
+}
+.tg .tg-0lax{
+    text-align:left;
+    vertical-align:top
+}
+table {
+    width: 100%;
+}
+.tg-7 {
+    width: 8%;
+}
+#task1r, #task2r, #task3r, #s5, #add, #task4r, #task5r, #best, #task5rNF, #task6r, #task7r, #task8r, #task1n, #task2n, #task3n, #task4n {
+    width: 65%;
+    background-color: transparent;
+    border: 0px;
+}
+#name, #rank {
+    width: 90%;
+    background-color: transparent;
+    border: 0px;
+}
+#more {
+    background-color: transparent;
+    border: 0px;
+    color: rgb(0, 162, 255);
+}
+#submit {
+    background-color: transparent;
+    border: 0px;
+}
