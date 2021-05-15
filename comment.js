@@ -396,7 +396,7 @@ function submit(){
             result = c45.concat(c44,c43,c42,c41,c40,c39,c38,c37,c36,c35,c34,c33,c32,c31,c30,c29,c28,c27,c26,c25,c24,c23,c22,c21,c20,c19,c18,c17,c16,c15,c14,c13,c12,c11,c10,c9,c8,c7,c6,c5,c4,c3,c2,c1);
             console.log(result);
             const textToBLOB = new Blob([result], { type: 'text/plain' });
-            const sFileName = 'Task of the week: rtask1.txt';
+            const sFileName = 'comment.txt';
             let newLink = document.createElement("a");
             newLink.download = sFileName;
             if (window.webkitURL != null) {
