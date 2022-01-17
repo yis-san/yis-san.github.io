@@ -43,7 +43,7 @@ function submit(){
     localStorage.clear();
     var i = 19;
     var table = document.getElementById("tg");
-    var rowCount = table.getElementsByTagName("tr").length
+    var rowCount = table.getElementsByTagName("tr").length;
     for(j=2; j<rowCount+1; j++) {
         var total = 0;
         var totalrp = 0;
