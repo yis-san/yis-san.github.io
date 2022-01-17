@@ -1,25 +1,3 @@
-comment.js
-Who has access
-Not shared
-System properties
-Type
-Javascript
-Size
-18 KB
-Storage used
-18 KB
-Location
-H
-Owner
-me
-Modified
-12:47 PM by me
-Opened
-12:47 PM by me
-Created
-12:47 PM with Google Drive
-Add a description
-Viewers can download
 function more() {
     var id=1;
     var table = document.getElementById("tg");
