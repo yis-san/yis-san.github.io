@@ -1,3 +1,25 @@
+comment.js
+Who has access
+Not shared
+System properties
+Type
+Javascript
+Size
+18 KB
+Storage used
+18 KB
+Location
+H
+Owner
+me
+Modified
+12:47 PM by me
+Opened
+12:47 PM by me
+Created
+12:47 PM with Google Drive
+Add a description
+Viewers can download
 function more() {
     var id=1;
     var table = document.getElementById("tg");
@@ -9,7 +31,7 @@ function more() {
   var rowId = row.id;
     
     
-    for (i = 0; i < 19; i++) { 
+    for (i = 0; i < 20; i++) { 
         var cell = row.insertCell(i);
         cell.id = i;
         cell.innerHTML = '<input type="text" id="s'+id+''+i+'" style="width: 65%;background-color: transparent;border: 0px;"">';
@@ -19,7 +41,7 @@ function more() {
 
 function submit(){
     localStorage.clear();
-    var i = 18;
+    var i = 19;
     var table = document.getElementById("tg");
     var rowCount = table.getElementsByTagName("tr").length
     for(j=2; j<rowCount+1; j++) {
@@ -35,93 +57,93 @@ function submit(){
                 var rank = document.getElementById(id).value;
                 console.log(rank);
             }
-            if(a === 2){
+            if(a === 2) {
+                var multiplier = document.getElementById(id).value;
+                console.log(multiplier);
+            }
+            if(a === 3){
                 var rtask1 = document.getElementById(id).value;
                 console.log(rtask1);
             }
-            if(a === 3){
+            if(a === 4){
                 var rtask2 = document.getElementById(id).value;
                 console.log(rtask2);
             }
-            if(a === 4){
-                var rtask3 = document.getElementById(id).value;
-                console.log(rtask3);
-            }
-            if(a === 4){
-                var rtask3 = document.getElementById(id).value;
-                console.log(rtask3);
-            }
             if(a === 5){
+                var rtask3 = document.getElementById(id).value;
+                console.log(rtask3);
+            }
+            if(a === 6){
                 var su5 = document.getElementById(id).value;
                 console.log(su5);
             }
-            if(a === 6){
+            if(a === 7){
                 var add = document.getElementById(id).value;
                 console.log(add);
             }
-            if(a === 7){
+            if(a === 8){
                 var v1 = document.getElementById(id).value;
                 console.log(v1);
             }
-            if(a === 8){
+            if(a === 9){
                 var rtask4 = document.getElementById(id).value;
                 console.log(rtask4);
             }
-            if(a === 9){
+            if(a === 10){
                 var rtask5 = document.getElementById(id).value;
                 console.log(rtask5);
             }
-            if(a === 10){
+            if(a === 11){
                 var best = document.getElementById(id).value;
                 console.log(best);
             }
-            if(a === 11){
+            if(a === 12){
                 var rtask5n = document.getElementById(id).value;
                 console.log(rtask5n);
             }
-            if(a === 12){
+            if(a === 13){
                 var rtask6 = document.getElementById(id).value;
                 console.log(rtask6);
             }
-            if(a === 13){
+            if(a === 14){
                 var rtask7 = document.getElementById(id).value;
                 console.log(rtask7);
             }
-            if(a === 14){
+            if(a === 15){
                 var rtask8 = document.getElementById(id).value;
                 console.log(rtask8);
             }
-            if(a === 15){
+            if(a === 16){
                 var ntask1 = document.getElementById(id).value;
                 console.log(ntask1);
             }
-            if(a === 16){
+            if(a === 17){
                 var ntask2 = document.getElementById(id).value;
                 console.log(ntask2);
             }
-            if(a === 17){
+            if(a === 18){
                 var ntask3 = document.getElementById(id).value;
                 console.log(ntask3);
             }
-            if(a === 18){
+            if(a === 19){
                 var ntask4 = document.getElementById(id).value;
                 console.log(ntask4);
             }
         }
         if(rank == "captain" || rank == "lieutenant" || rank == "veteran") {
-            total = 1.5*rtask1*3+1.5*rtask2*5+1.5*rtask3*5+1.5*su5*5+1.5*add*3+1.5*v1*5+1.5*rtask4*13+1.5*rtask5*5+1.5*best*5+1.5*rtask5n*3+1.5*rtask6*4+1.5*rtask7*7+1.5*rtask8*15+1.5*ntask1*12+1.5*ntask2*10+1.5*ntask3*8+1.5*ntask4*4;
+            total = multiplier*rtask1*3+multiplier*rtask2*5+multiplier*rtask3*5+multiplier*su5*5+multiplier*add*3+multiplier*v1*5+multiplier*rtask4*13+multiplier*rtask5*5+multiplier*best*5+multiplier*rtask5n*3+multiplier*rtask6*4+multiplier*rtask7*7+multiplier*rtask8*15+multiplier*ntask1*12+multiplier*ntask2*10+multiplier*ntask3*8+multiplier*ntask4*4;
             var hour2 = 0;
             hour2 = Math.floor(add/2);
             totalrp = rtask1*5+rtask2*3+rtask3*2+hour2*3+rtask4*5+rtask5*10+rtask6*3+rtask7*7+rtask8*8+ntask1*10+ntask2*4+ntask3*6+ntask4*2;
             var rt1 = 0; var rt2 = 0; var rt3 = 0; var sup5 = 0; var addd = 0; var v11 = 0; var rt4 = 0; var rt5 = 0; var besti = 0; var rt5n = 0; var rt6 = 0; var rt7 = 0; var rt8 = 0; var nt1 = 0; var nt2 = 0; var nt3 = 0; var nt4 = 0; var rprt1 = 0; var rprt2 = 0; var rprt3 = 0; var rp1h = 0; var rprt4 = 0; var rprt5 = 0; var rprt6 = 0; var rprt7 = 0; var rprt8 = 0; var rpnt1 = 0; var rpnt2 = 0; var rpnt3 = 0; var rpnt4 = 0;
-            if(rtask1>0) rt1 = 1.5*rtask1*3; rprt1 = rtask1*5; if(rtask2>0) rt2 = 1.5*rtask2*5; rprt2 = rtask2*3; if(rtask3>0) rt3 = 1.5*rtask3*5; rprt3 = rtask3*2; if(su5>0) sup5 = 1.5*su5*5; if(add>0) addd = 1.5*add*3; var hour1 = 0; hour1=Math.floor(add/2); rp1h = hour1*3; if(v1>0) v11 = 1.5*v1*5; else{ } if(rtask4>0) rt4 = 1.5*rtask4*15; rprt4 = rtask4*5; if(rtask5>0) rt5 = 1.5*rtask5*5; rprt5 = rtask5*10; if(best>0) besti = 1.5*best*5; if(rtask5n>0) rt5n = 1.5*rtask5n*3; if(rtask6>0) rt6 = 1.5*rtask6*4; rprt6 = rtask6*3; if(rtask7>0) rt7 = 1.5*rtask7*7; rprt7 = rtask7*7; if(rtask8>0) rt8 = 1.5*rtask8*15; rprt8 = rtask8*8; if(ntask1>0) nt1 = 1.5*ntask1*12; rpnt1 = ntask1*10; if(ntask2>0) nt2 = 1.5*ntask2*10; rpnt2 = ntask2*4; if(ntask3>0) nt3 = 1.5*ntask3*8; rpnt3 = ntask3*6; if(ntask4>0) nt4 = 1.5*ntask4*4; rpnt4 = ntask4*2;
+            if(rtask1>0) rt1 = multiplier*rtask1*3; rprt1 = rtask1*5; if(rtask2>0) rt2 = multiplier*rtask2*5; rprt2 = rtask2*3; if(rtask3>0) rt3 = multiplier*rtask3*5; rprt3 = rtask3*2; if(su5>0) sup5 = multiplier*su5*5; if(add>0) addd = multiplier*add*3; var hour1 = 0; hour1=Math.floor(add/2); rp1h = hour1*3; if(v1>0) v11 = multiplier*v1*5; else{ } if(rtask4>0) rt4 = multiplier*rtask4*15; rprt4 = rtask4*5; if(rtask5>0) rt5 = multiplier*rtask5*5; rprt5 = rtask5*10; if(best>0) besti = multiplier*best*5; if(rtask5n>0) rt5n = multiplier*rtask5n*3; if(rtask6>0) rt6 = multiplier*rtask6*4; rprt6 = rtask6*3; if(rtask7>0) rt7 = multiplier*rtask7*7; rprt7 = rtask7*7; if(rtask8>0) rt8 = multiplier*rtask8*15; rprt8 = rtask8*8; if(ntask1>0) nt1 = multiplier*ntask1*12; rpnt1 = ntask1*10; if(ntask2>0) nt2 = multiplier*ntask2*10; rpnt2 = ntask2*4; if(ntask3>0) nt3 = multiplier*ntask3*8; rpnt3 = ntask3*6; if(ntask4>0) nt4 = multiplier*ntask4*4; rpnt4 = ntask4*2;
         } else if(rank = "member") {
-            total = rtask1*3+rtask2*5+rtask3*5+su5*5+add*3+v1*5+rtask4*13+rtask5*5+best*5+rtask5n*3+rtask6*4+rtask7*7+rtask8*15+ntask1*12+ntask2*10+ntask3*8+ntask4*4;
+            total = multiplier*rtask1*3+multiplier*rtask2*5+multiplier*rtask3*5+multiplier*su5*5+multiplier*add*3+multiplier*v1*5+multiplier*rtask4*13+multiplier*rtask5*5+multiplier*best*5+multiplier*rtask5n*3+multiplier*rtask6*4+multiplier*rtask7*7+multiplier*rtask8*15+multiplier*ntask1*12+multiplier*ntask2*10+multiplier*ntask3*8+multiplier*ntask4*4;
             var hour2 = 0;
             hour2 = Math.floor(add/2);
             totalrp = rtask1*5+rtask2*3+rtask3*2+hour2*3+rtask4*5+rtask5*10+rtask6*3+rtask7*7+rtask8*8+ntask1*10+ntask2*4+ntask3*6+ntask4*2;
             var rt1 = 0; var rt2 = 0; var rt3 = 0; var sup5 = 0; var addd = 0; var v11 = 0; var rt4 = 0; var rt5 = 0; var besti = 0; var rt5n = 0; var rt6 = 0; var rt7 = 0; var rt8 = 0; var nt1 = 0; var nt2 = 0; var nt3 = 0; var nt4 = 0; var rprt1 = 0; var rprt2 = 0; var rprt3 = 0; var rp1h = 0; var rprt4 = 0; var rprt5 = 0; var rprt6 = 0; var rprt7 = 0; var rprt8 = 0; var rpnt1 = 0; var rpnt2 = 0; var rpnt3 = 0; var rpnt4 = 0;
-            if(rtask1>0) rt1 = rtask1*3; rprt1 = rtask1*5; if(rtask2>0) rt2 = rtask2*5; rprt2 = rtask2*3; if(rtask3>0) rt3 = rtask3*5; rprt3 = rtask3*2; if(su5>0) sup5 = su5*5; if(add>0) addd = add*3; var hour1 = 0; hour1=Math.floor(add/2); rp1h = hour1*3;  if(v1>0) v11 = v1*5; if(rtask4>0) rt4 = rtask4*15; rprt4 = rtask4*5; if(rtask5>0) rt5 = rtask5*5; rprt5 = rtask5*10; if(best>0) besti = best*5; if(rtask5n>0) rt5n = rtask5n*3; if(rtask6>0) rt6 = rtask6*4; rprt6 = rtask6*3; if(rtask7>0) rt7 = rtask7*7; rprt7 = rtask7*7; if(rtask8>0) rt8 = rtask8*15; rprt8 = rtask8*8; if(ntask1>0) nt1 = ntask1*12; rpnt1 = ntask1*10; if(ntask2>0) nt2 = ntask2*10; rpnt2 = ntask2*4; if(ntask3>0) nt3 = ntask3*8; rpnt3 = ntask3*6; if(ntask4>0) nt4 = ntask4*4; rpnt4 = ntask4*2;
+            if(rtask1>0) rt1 = multiplier*rtask1*3; rprt1 = rtask1*5; if(rtask2>0) rt2 = multiplier*rtask2*5; rprt2 = rtask2*3; if(rtask3>0) rt3 = multiplier*rtask3*5; rprt3 = rtask3*2; if(su5>0) sup5 = multiplier*su5*5; if(add>0) addd = multiplier*add*3; var hour1 = 0; hour1=Math.floor(add/2); rp1h = hour1*3;  if(v1>0) v11 = multiplier*v1*5; if(rtask4>0) rt4 = multiplier*rtask4*15; rprt4 = rtask4*5; if(rtask5>0) rt5 = multiplier*rtask5*5; rprt5 = rtask5*10; if(best>0) besti = multiplier*best*5; if(rtask5n>0) rt5n = multiplier*rtask5n*3; if(rtask6>0) rt6 = multiplier*rtask6*4; rprt6 = rtask6*3; if(rtask7>0) rt7 = multiplier*rtask7*7; rprt7 = rtask7*7; if(rtask8>0) rt8 = multiplier*rtask8*15; rprt8 = rtask8*8; if(ntask1>0) nt1 = multiplier*ntask1*12; rpnt1 = ntask1*10; if(ntask2>0) nt2 = multiplier*ntask2*10; rpnt2 = ntask2*4; if(ntask3>0) nt3 = multiplier*ntask3*8; rpnt3 = ntask3*6; if(ntask4>0) nt4 = multiplier*ntask4*4; rpnt4 = ntask4*2;
         }
         let data = ''+name+' ('+rank+')'+'\r\r\n'+'Total points - '+total+'\r\n'+'Total rp - '+totalrp+'\r\n\r\n'+'+'+rt1+' points '+'+'+rprt1+' rp '+'for '+rtask1+'x rtask 1'+'\r\n'+'+'+rt2+' points '+'+'+rprt2+' rp'+' for '+rtask2+'x rtask 2'+'\r\n'+'+'+rt3+' points '+'+'+rprt3+' rp'+' for '+rtask3+'x rtask 3'+'\r\n'+'+'+sup5+' for additional 5 supports'+'\r\n'+'+'+addd+' for additional 30 minutes'+'\r\n'+'+'+rp1h+' rp'+' for 1h in the support'+'\r\n'+'+'+v11+' for ending support in a 1v1'+'\r\n'+'+'+rt4+' points '+'+'+rprt4+' rp'+' for '+rtask4+'x rtask 4'+'\r\n'+'+'+rt5+' points '+'+'+rprt5+' rp for '+rtask5+'x rtask 5'+'\r\n'+'+'+besti+' for being the best on the joint training'+'\r\n'+'+'+rt5n+' for '+rtask5n+'x rtask 5 not full duration'+'\r\n'+'+'+rt6+' points '+'+'+rprt6+' rp'+' for '+rtask6+'x rtask 6'+'\r\n'+'+'+rt7+' points '+'+'+rprt7+' rp'+' for '+rtask7+'x rtask 7'+'\r\n'+'+'+rt8+' points '+'+'+rprt8+' rp'+' for '+rtask8+'x rtask 8'+'\r\n'+'+'+nt1+' points '+'+'+rpnt1+' rp'+' for ntask 1'+'\r\n'+'+'+nt2+' points '+'+'+rpnt2+' rp'+' for ntask 2'+'\r\n'+'+'+nt3+' points '+'+'+rpnt3+' rp'+' for ntask 3'+'\r\n'+'+'+nt4+' points '+'+'+rpnt4+' rp'+' for ntask 4'+'\r\n'+'================================='+'\r\n';
         localStorage.setItem(j, data);
