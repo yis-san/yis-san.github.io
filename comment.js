@@ -2,7 +2,7 @@ function more() {
     var id=1;
     var table = document.getElementById("tg");
         var rowCount = table.getElementsByTagName("tr").length;
-  var id = rowCount + 1;
+  var id = rowCount + 5;
 
   var row = table.insertRow(1);
   row.id=id;
@@ -22,7 +22,7 @@ function submit(){
     var i = 19;
     var table = document.getElementById("tg");
     var rowCount = table.getElementsByTagName("tr").length;
-    for(j=2; j<rowCount+1; j++) {
+    for(j=6; j<rowCount+1; j++) {
         var total = 0;
         var totalrp = 0;
         for(a=0; a<i+1; a++){
