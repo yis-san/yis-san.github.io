@@ -22,7 +22,7 @@ function submit(){
     var i = 19;
     var table = document.getElementById("tg");
     var rowCount = table.getElementsByTagName("tr").length;
-    for(j=6; j<rowCount+1; j++) {
+    for(j=6; j<rowCount+5; j++) {
         var total = 0;
         var totalrp = 0;
         for(a=0; a<i+1; a++){
