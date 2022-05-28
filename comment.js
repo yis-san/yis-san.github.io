@@ -122,15 +122,15 @@ function submit(){
         if(rank == "captain" || rank == "lieutenant" || rank == "veteran") {
             var hour2 = 0;
             hour2 = Math.floor(add/2);
-            var rtask12=0;
-            var rt12rp=0;
+            var rt12rp = 0;
             var su5 = 0;
             su5 = Math.floor(rtask3/5);
             var rt12count = 0; 
+            var rtask12 = 0;
             if(rtask121>0) rt12count++; if(rtask122>0) rt12count++; if(rtask123>0) rt12count++;
-            if(rtask121 === 4) {rtask12=rtask12+4; rt12rp=rt12rp+3;} if(rtask121 === 5) {rtask12=rtask12+5; rt12rp=rt12rp+3;} if(rtask121 === 6) {rtask12=rtask12+6; rt12rp=rt12rp+3;} if(rtask121 === 7) {rtask12=rtask12+9; rt12rp=rt12rp+3;} if(rtask121 === 8) {rtask12=rtask12+12; rt12rp=rt12rp+5;} if(rtask121 === 9) {rtask12=rtask12+14; rt12rp=rt12rp+7;}
-            if(rtask122 === 4) {rtask12=rtask12+4; rt12rp=rt12rp+3;} if(rtask122 === 5) {rtask12=rtask12+5; rt12rp=rt12rp+3;} if(rtask122 === 6) {rtask12=rtask12+6; rt12rp=rt12rp+3;} if(rtask122 === 7) {rtask12=rtask12+9; rt12rp=rt12rp+3;} if(rtask122 === 8) {rtask12=rtask12+12; rt12rp=rt12rp+5;} if(rtask122 === 9) {rtask12=rtask12+14; rt12rp=rt12rp+7;}
-            if(rtask123 === 4) {rtask12=rtask12+4; rt12rp=rt12rp+3;} if(rtask123 === 5) {rtask12=rtask12+5; rt12rp=rt12rp+3;} if(rtask123 === 6) {rtask12=rtask12+6; rt12rp=rt12rp+3;} if(rtask123 === 7) {rtask12=rtask12+9; rt12rp=rt12rp+3;} if(rtask123 === 8) {rtask12=rtask12+12; rt12rp=rt12rp+5;} if(rtask123 === 9) {rtask12=rtask12+14; rt12rp=rt12rp+7;}
+            if(rtask121 == 4) {rtask12=rtask12+4; rt12rp=rt12rp+3;} else if(rtask121 == 5) {rtask12=rtask12+5; rt12rp=rt12rp+3;} else if(rtask121 == 6) {rtask12=rtask12+6; rt12rp=rt12rp+3;} else if(rtask121 == 7) {rtask12=rtask12+9; rt12rp=rt12rp+3;} else if(rtask121 == 8) {rtask12=rtask12+12; rt12rp=rt12rp+5;} else if(rtask121 == 9) {rtask12=rtask12+14; rt12rp=rt12rp+7;}
+            if(rtask122 == 4) {rtask12=rtask12+4; rt12rp=rt12rp+3;} else if(rtask122 == 5) {rtask12=rtask12+5; rt12rp=rt12rp+3;} else if(rtask122 == 6) {rtask12=rtask12+6; rt12rp=rt12rp+3;} else if(rtask122 == 7) {rtask12=rtask12+9; rt12rp=rt12rp+3;} else if(rtask122 == 8) {rtask12=rtask12+12; rt12rp=rt12rp+5;} else if(rtask122 == 9) {rtask12=rtask12+14; rt12rp=rt12rp+7;}
+            if(rtask123 == 4) {rtask12=rtask12+4; rt12rp=rt12rp+3;} else if(rtask123 == 5) {rtask12=rtask12+5; rt12rp=rt12rp+3;} else if(rtask123 == 6) {rtask12=rtask12+6; rt12rp=rt12rp+3;} else if(rtask123 == 7) {rtask12=rtask12+9; rt12rp=rt12rp+3;} else if(rtask123 == 8) {rtask12=rtask12+12; rt12rp=rt12rp+5;} else if(rtask123 == 9) {rtask12=rtask12+14; rt12rp=rt12rp+7;}
             total = multiplier*rtask1*3+multiplier*rtask2*5+multiplier*rtask3*15+multiplier*su5*5+multiplier*add*6+multiplier*v1*5+multiplier*rtask4*15+multiplier*rtask5*5+multiplier*best*5+multiplier*rtask5n*3+multiplier*rtask6*4+multiplier*rtask7*7+multiplier*rtask8*15+multiplier*rtask11*8+multiplier*rtask12+multiplier*ntask1*12+multiplier*ntask2*10+multiplier*ntask3*8+multiplier*ntask4*4;
             total = Math.round(total);
             totalrp = rtask1*5+rtask2*3+rtask3*5+hour2*3+rtask4*5+rtask5*10+rtask6*3+rtask7*7+rtask8*8+rtask11*2+rt12rp+ntask1*10+ntask2*4+ntask3*6+ntask4*2;
@@ -139,15 +139,15 @@ function submit(){
         } else if(rank = "member") {
             var hour2 = 0;
             hour2 = Math.floor(add/2);
-            var rtask12=0;
-            var rt12rp=0;
+            var rt12rp = 0;
             var su5 = 0;
             su5 = Math.floor(rtask3/5);
             var rt12count = 0; 
+            var rtask12 = 0;
             if(rtask121>0) rt12count++; if(rtask122>0) rt12count++; if(rtask123>0) rt12count++;
-            if(rtask121 === 4) {rtask12=rtask12+4; rt12rp=rt12rp+3;} if(rtask121 === 5) {rtask12=rtask12+5; rt12rp=rt12rp+3;} if(rtask121 === 6) {rtask12=rtask12+6; rt12rp=rt12rp+3;} if(rtask121 === 7) {rtask12=rtask12+9; rt12rp=rt12rp+3;} if(rtask121 === 8) {rtask12=rtask12+12; rt12rp=rt12rp+5;} if(rtask121 === 9) {rtask12=rtask12+14; rt12rp=rt12rp+7;}
-            if(rtask122 === 4) {rtask12=rtask12+4; rt12rp=rt12rp+3;} if(rtask122 === 5) {rtask12=rtask12+5; rt12rp=rt12rp+3;} if(rtask122 === 6) {rtask12=rtask12+6; rt12rp=rt12rp+3;} if(rtask122 === 7) {rtask12=rtask12+9; rt12rp=rt12rp+3;} if(rtask122 === 8) {rtask12=rtask12+12; rt12rp=rt12rp+5;} if(rtask122 === 9) {rtask12=rtask12+14; rt12rp=rt12rp+7;}
-            if(rtask123 === 4) {rtask12=rtask12+4; rt12rp=rt12rp+3;} if(rtask123 === 5) {rtask12=rtask12+5; rt12rp=rt12rp+3;} if(rtask123 === 6) {rtask12=rtask12+6; rt12rp=rt12rp+3;} if(rtask123 === 7) {rtask12=rtask12+9; rt12rp=rt12rp+3;} if(rtask123 === 8) {rtask12=rtask12+12; rt12rp=rt12rp+5;} if(rtask123 === 9) {rtask12=rtask12+14; rt12rp=rt12rp+7;}
+            if(rtask121 == 4) {rtask12=rtask12+4; rt12rp=rt12rp+3;} else if(rtask121 == 5) {rtask12=rtask12+5; rt12rp=rt12rp+3;} else if(rtask121 == 6) {rtask12=rtask12+6; rt12rp=rt12rp+3;} else if(rtask121 == 7) {rtask12=rtask12+9; rt12rp=rt12rp+3;} else if(rtask121 == 8) {rtask12=rtask12+12; rt12rp=rt12rp+5;} else if(rtask121 == 9) {rtask12=rtask12+14; rt12rp=rt12rp+7;}
+            if(rtask122 == 4) {rtask12=rtask12+4; rt12rp=rt12rp+3;} else if(rtask122 == 5) {rtask12=rtask12+5; rt12rp=rt12rp+3;} else if(rtask122 == 6) {rtask12=rtask12+6; rt12rp=rt12rp+3;} else if(rtask122 == 7) {rtask12=rtask12+9; rt12rp=rt12rp+3;} else if(rtask122 == 8) {rtask12=rtask12+12; rt12rp=rt12rp+5;} else if(rtask122 == 9) {rtask12=rtask12+14; rt12rp=rt12rp+7;}
+            if(rtask123 == 4) {rtask12=rtask12+4; rt12rp=rt12rp+3;} else if(rtask123 == 5) {rtask12=rtask12+5; rt12rp=rt12rp+3;} else if(rtask123 == 6) {rtask12=rtask12+6; rt12rp=rt12rp+3;} else if(rtask123 == 7) {rtask12=rtask12+9; rt12rp=rt12rp+3;} else if(rtask123 == 8) {rtask12=rtask12+12; rt12rp=rt12rp+5;} else if(rtask123 == 9) {rtask12=rtask12+14; rt12rp=rt12rp+7;}
             total = multiplier*rtask1*3+multiplier*rtask2*5+multiplier*rtask3*15+multiplier*su5*5+multiplier*add*6+multiplier*v1*5+multiplier*rtask4*15+multiplier*rtask5*5+multiplier*best*5+multiplier*rtask5n*3+multiplier*rtask6*4+multiplier*rtask7*7+multiplier*rtask8*15+multiplier*rtask11*8+multiplier*rtask12+multiplier*ntask1*12+multiplier*ntask2*10+multiplier*ntask3*8+multiplier*ntask4*4;
             total = Math.round(total);
             totalrp = rtask1*5+rtask2*3+rtask3*5+hour2*3+rtask4*5+rtask5*10+rtask6*3+rtask7*7+rtask8*8+rtask11*2+rt12rp+ntask1*10+ntask2*4+ntask3*6+ntask4*2;
