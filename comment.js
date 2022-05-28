@@ -1,5 +1,4 @@
 function more() {
-    var id=1;
     var table = document.getElementById("tg");
         var rowCount = table.getElementsByTagName("tr").length;
   var id = rowCount + 5;
@@ -9,7 +8,7 @@ function more() {
   var rowId = row.id;
     
     
-    for (i = 0; i < 20; i++) { 
+    for (i = 0; i < 23; i++) { 
         var cell = row.insertCell(i);
         cell.id = i;
         cell.innerHTML = '<input type="text" id="s'+id+''+i+'" style="width: 65%;background-color: transparent;border: 0px;"">';
@@ -19,7 +18,7 @@ function more() {
 
 function submit(){
     localStorage.clear();
-    var i = 19;
+    var i = 22;
     var table = document.getElementById("tg");
     var rowCount = table.getElementsByTagName("tr").length;
     for(j=6; j<rowCount+5; j++) {
@@ -52,78 +51,110 @@ function submit(){
                 console.log(rtask3);
             }
             if(a === 6){
-                var su5 = document.getElementById(id).value;
-                console.log(su5);
-            }
-            if(a === 7){
                 var add = document.getElementById(id).value;
                 console.log(add);
             }
-            if(a === 8){
+            if(a === 7){
                 var v1 = document.getElementById(id).value;
                 console.log(v1);
             }
-            if(a === 9){
+            if(a === 8){
                 var rtask4 = document.getElementById(id).value;
                 console.log(rtask4);
             }
-            if(a === 10){
+            if(a === 9){
                 var rtask5 = document.getElementById(id).value;
                 console.log(rtask5);
             }
-            if(a === 11){
+            if(a === 10){
                 var best = document.getElementById(id).value;
                 console.log(best);
             }
-            if(a === 12){
+            if(a === 11){
                 var rtask5n = document.getElementById(id).value;
                 console.log(rtask5n);
             }
-            if(a === 13){
+            if(a === 12){
                 var rtask6 = document.getElementById(id).value;
                 console.log(rtask6);
             }
-            if(a === 14){
+            if(a === 13){
                 var rtask7 = document.getElementById(id).value;
                 console.log(rtask7);
             }
-            if(a === 15){
+            if(a === 14){
                 var rtask8 = document.getElementById(id).value;
                 console.log(rtask8);
             }
+            if(a === 15){
+                var rtask11 = document.getElementById(id).value;
+                console.log(rtask11);
+            }
             if(a === 16){
+                var rtask121 = document.getElementById(id).value;
+                console.log(rtask121);
+            }
+            if(a === 17){
+                var rtask122 = document.getElementById(id).value;
+                console.log(rtask122);
+            }
+            if(a === 18){
+                var rtask123 = document.getElementById(id).value;
+                console.log(rtask123);
+            }
+            if(a === 19){
                 var ntask1 = document.getElementById(id).value;
                 console.log(ntask1);
             }
-            if(a === 17){
+            if(a === 20){
                 var ntask2 = document.getElementById(id).value;
                 console.log(ntask2);
             }
-            if(a === 18){
+            if(a === 21){
                 var ntask3 = document.getElementById(id).value;
                 console.log(ntask3);
             }
-            if(a === 19){
+            if(a === 22){
                 var ntask4 = document.getElementById(id).value;
                 console.log(ntask4);
             }
         }
         if(rank == "captain" || rank == "lieutenant" || rank == "veteran") {
-            total = multiplier*rtask1*3+multiplier*rtask2*5+multiplier*rtask3*15+multiplier*su5*5+multiplier*add*6+multiplier*v1*5+multiplier*rtask4*15+multiplier*rtask5*5+multiplier*best*5+multiplier*rtask5n*3+multiplier*rtask6*4+multiplier*rtask7*7+multiplier*rtask8*15+multiplier*ntask1*12+multiplier*ntask2*10+multiplier*ntask3*8+multiplier*ntask4*4;
             var hour2 = 0;
             hour2 = Math.floor(add/2);
-            totalrp = rtask1*5+rtask2*3+rtask3*5+hour2*3+rtask4*5+rtask5*10+rtask6*3+rtask7*7+rtask8*8+ntask1*10+ntask2*4+ntask3*6+ntask4*2;
-            var rt1 = 0; var rt2 = 0; var rt3 = 0; var sup5 = 0; var addd = 0; var v11 = 0; var rt4 = 0; var rt5 = 0; var besti = 0; var rt5n = 0; var rt6 = 0; var rt7 = 0; var rt8 = 0; var nt1 = 0; var nt2 = 0; var nt3 = 0; var nt4 = 0; var rprt1 = 0; var rprt2 = 0; var rprt3 = 0; var rp1h = 0; var rprt4 = 0; var rprt5 = 0; var rprt6 = 0; var rprt7 = 0; var rprt8 = 0; var rpnt1 = 0; var rpnt2 = 0; var rpnt3 = 0; var rpnt4 = 0;
-            if(rtask1>0) rt1 = multiplier*rtask1*3; rprt1 = rtask1*5; if(rtask2>0) rt2 = multiplier*rtask2*5; rprt2 = rtask2*3; if(rtask3>0) rt3 = multiplier*rtask3*15; rprt3 = rtask3*5; if(su5>0) sup5 = multiplier*su5*5; if(add>0) addd = multiplier*add*6; var hour1 = 0; hour1=Math.floor(add/2); rp1h = hour1*3; if(v1>0) v11 = multiplier*v1*5; else{ } if(rtask4>0) rt4 = multiplier*rtask4*15; rprt4 = rtask4*5; if(rtask5>0) rt5 = multiplier*rtask5*5; rprt5 = rtask5*10; if(best>0) besti = multiplier*best*5; if(rtask5n>0) rt5n = multiplier*rtask5n*3; if(rtask6>0) rt6 = multiplier*rtask6*4; rprt6 = rtask6*3; if(rtask7>0) rt7 = multiplier*rtask7*7; rprt7 = rtask7*7; if(rtask8>0) rt8 = multiplier*rtask8*15; rprt8 = rtask8*8; if(ntask1>0) nt1 = multiplier*ntask1*12; rpnt1 = ntask1*10; if(ntask2>0) nt2 = multiplier*ntask2*10; rpnt2 = ntask2*4; if(ntask3>0) nt3 = multiplier*ntask3*8; rpnt3 = ntask3*6; if(ntask4>0) nt4 = multiplier*ntask4*4; rpnt4 = ntask4*2;
+            var rtask12=0;
+            var rt12rp=0;
+            var su5 = 0;
+            su5 = Math.floor(rtask3/5);
+            var rt12count = 0; 
+            if(rtask121>0) rt12count++; if(rtask122>0) rt12count++; if(rtask123>0) rt12count++;
+            if(rtask121 === 4) {rtask12=rtask12+4; rt12rp=rt12rp+3;} if(rtask121 === 5) {rtask12=rtask12+5; rt12rp=rt12rp+3;} if(rtask121 === 6) {rtask12=rtask12+6; rt12rp=rt12rp+3;} if(rtask121 === 7) {rtask12=rtask12+9; rt12rp=rt12rp+3;} if(rtask121 === 8) {rtask12=rtask12+12; rt12rp=rt12rp+5;} if(rtask121 === 9) {rtask12=rtask12+14; rt12rp=rt12rp+7;}
+            if(rtask122 === 4) {rtask12=rtask12+4; rt12rp=rt12rp+3;} if(rtask122 === 5) {rtask12=rtask12+5; rt12rp=rt12rp+3;} if(rtask122 === 6) {rtask12=rtask12+6; rt12rp=rt12rp+3;} if(rtask122 === 7) {rtask12=rtask12+9; rt12rp=rt12rp+3;} if(rtask122 === 8) {rtask12=rtask12+12; rt12rp=rt12rp+5;} if(rtask122 === 9) {rtask12=rtask12+14; rt12rp=rt12rp+7;}
+            if(rtask123 === 4) {rtask12=rtask12+4; rt12rp=rt12rp+3;} if(rtask123 === 5) {rtask12=rtask12+5; rt12rp=rt12rp+3;} if(rtask123 === 6) {rtask12=rtask12+6; rt12rp=rt12rp+3;} if(rtask123 === 7) {rtask12=rtask12+9; rt12rp=rt12rp+3;} if(rtask123 === 8) {rtask12=rtask12+12; rt12rp=rt12rp+5;} if(rtask123 === 9) {rtask12=rtask12+14; rt12rp=rt12rp+7;}
+            total = multiplier*rtask1*3+multiplier*rtask2*5+multiplier*rtask3*15+multiplier*su5*5+multiplier*add*6+multiplier*v1*5+multiplier*rtask4*15+multiplier*rtask5*5+multiplier*best*5+multiplier*rtask5n*3+multiplier*rtask6*4+multiplier*rtask7*7+multiplier*rtask8*15+multiplier*rtask11*8+multiplier*rtask12+multiplier*ntask1*12+multiplier*ntask2*10+multiplier*ntask3*8+multiplier*ntask4*4;
+            total = Math.round(total);
+            totalrp = rtask1*5+rtask2*3+rtask3*5+hour2*3+rtask4*5+rtask5*10+rtask6*3+rtask7*7+rtask8*8+rtask11*2+rt12rp+ntask1*10+ntask2*4+ntask3*6+ntask4*2;
+            var rt1 = 0; var rt2 = 0; var rt3 = 0; var sup5 = 0; var addd = 0; var v11 = 0; var rt4 = 0; var rt5 = 0; var besti = 0; var rt5n = 0; var rt6 = 0; var rt7 = 0; var rt8 = 0; var rt11 = 0; var rt12 = 0; var nt1 = 0; var nt2 = 0; var nt3 = 0; var nt4 = 0; var rprt1 = 0; var rprt2 = 0; var rprt3 = 0; var rp1h = 0; var rprt4 = 0; var rprt5 = 0; var rprt6 = 0; var rprt7 = 0; var rprt8 = 0; var rpnt1 = 0; var rpnt2 = 0; var rpnt3 = 0; var rpnt4 = 0; var rprt11 = 0;
+            if(rtask1>0) rt1 = multiplier*rtask1*3; rprt1 = rtask1*5; if(rtask2>0) rt2 = multiplier*rtask2*5; rprt2 = rtask2*3; if(rtask3>0) rt3 = multiplier*rtask3*15; rprt3 = rtask3*5; if(su5>0) sup5 = multiplier*su5*5; if(add>0) addd = multiplier*add*6; var hour1 = 0; hour1=Math.floor(add/2); rp1h = hour1*3; if(v1>0) v11 = multiplier*v1*5; if(rtask4>0) rt4 = multiplier*rtask4*15; rprt4 = rtask4*5; if(rtask5>0) rt5 = multiplier*rtask5*5; rprt5 = rtask5*10; if(best>0) besti = multiplier*best*5; if(rtask5n>0) rt5n = multiplier*rtask5n*3; if(rtask6>0) rt6 = multiplier*rtask6*4; rprt6 = rtask6*3; if(rtask7>0) rt7 = multiplier*rtask7*7; rprt7 = rtask7*7; if(rtask8>0) rt8 = multiplier*rtask8*15; rprt8 = rtask8*8; if(rtask11>0) rt11=multiplier*rtask11*8; rprt11=rtask11*2; if(rtask12>0) rt12=multiplier*rtask12; if(ntask1>0) nt1 = multiplier*ntask1*12; rpnt1 = ntask1*10; if(ntask2>0) nt2 = multiplier*ntask2*10; rpnt2 = ntask2*4; if(ntask3>0) nt3 = multiplier*ntask3*8; rpnt3 = ntask3*6; if(ntask4>0) nt4 = multiplier*ntask4*4; rpnt4 = ntask4*2;
         } else if(rank = "member") {
-            total = multiplier*rtask1*3+multiplier*rtask2*5+multiplier*rtask3*15+multiplier*su5*5+multiplier*add*6+multiplier*v1*5+multiplier*rtask4*15+multiplier*rtask5*5+multiplier*best*5+multiplier*rtask5n*3+multiplier*rtask6*4+multiplier*rtask7*7+multiplier*rtask8*15+multiplier*ntask1*12+multiplier*ntask2*10+multiplier*ntask3*8+multiplier*ntask4*4;
             var hour2 = 0;
             hour2 = Math.floor(add/2);
-            totalrp = rtask1*5+rtask2*3+rtask3*5+hour2*3+rtask4*5+rtask5*10+rtask6*3+rtask7*7+rtask8*8+ntask1*10+ntask2*4+ntask3*6+ntask4*2;
-            var rt1 = 0; var rt2 = 0; var rt3 = 0; var sup5 = 0; var addd = 0; var v11 = 0; var rt4 = 0; var rt5 = 0; var besti = 0; var rt5n = 0; var rt6 = 0; var rt7 = 0; var rt8 = 0; var nt1 = 0; var nt2 = 0; var nt3 = 0; var nt4 = 0; var rprt1 = 0; var rprt2 = 0; var rprt3 = 0; var rp1h = 0; var rprt4 = 0; var rprt5 = 0; var rprt6 = 0; var rprt7 = 0; var rprt8 = 0; var rpnt1 = 0; var rpnt2 = 0; var rpnt3 = 0; var rpnt4 = 0;
-            if(rtask1>0) rt1 = multiplier*rtask1*3; rprt1 = rtask1*5; if(rtask2>0) rt2 = multiplier*rtask2*5; rprt2 = rtask2*3; if(rtask3>0) rt3 = multiplier*rtask3*15; rprt3 = rtask3*5; if(su5>0) sup5 = multiplier*su5*5; if(add>0) addd = multiplier*add*6; var hour1 = 0; hour1=Math.floor(add/2); rp1h = hour1*3;  if(v1>0) v11 = multiplier*v1*5; if(rtask4>0) rt4 = multiplier*rtask4*15; rprt4 = rtask4*5; if(rtask5>0) rt5 = multiplier*rtask5*5; rprt5 = rtask5*10; if(best>0) besti = multiplier*best*5; if(rtask5n>0) rt5n = multiplier*rtask5n*3; if(rtask6>0) rt6 = multiplier*rtask6*4; rprt6 = rtask6*3; if(rtask7>0) rt7 = multiplier*rtask7*7; rprt7 = rtask7*7; if(rtask8>0) rt8 = multiplier*rtask8*15; rprt8 = rtask8*8; if(ntask1>0) nt1 = multiplier*ntask1*12; rpnt1 = ntask1*10; if(ntask2>0) nt2 = multiplier*ntask2*10; rpnt2 = ntask2*4; if(ntask3>0) nt3 = multiplier*ntask3*8; rpnt3 = ntask3*6; if(ntask4>0) nt4 = multiplier*ntask4*4; rpnt4 = ntask4*2;
+            var rtask12=0;
+            var rt12rp=0;
+            var su5 = 0;
+            su5 = Math.floor(rtask3/5);
+            var rt12count = 0; 
+            if(rtask121>0) rt12count++; if(rtask122>0) rt12count++; if(rtask123>0) rt12count++;
+            if(rtask121 === 4) {rtask12=rtask12+4; rt12rp=rt12rp+3;} if(rtask121 === 5) {rtask12=rtask12+5; rt12rp=rt12rp+3;} if(rtask121 === 6) {rtask12=rtask12+6; rt12rp=rt12rp+3;} if(rtask121 === 7) {rtask12=rtask12+9; rt12rp=rt12rp+3;} if(rtask121 === 8) {rtask12=rtask12+12; rt12rp=rt12rp+5;} if(rtask121 === 9) {rtask12=rtask12+14; rt12rp=rt12rp+7;}
+            if(rtask122 === 4) {rtask12=rtask12+4; rt12rp=rt12rp+3;} if(rtask122 === 5) {rtask12=rtask12+5; rt12rp=rt12rp+3;} if(rtask122 === 6) {rtask12=rtask12+6; rt12rp=rt12rp+3;} if(rtask122 === 7) {rtask12=rtask12+9; rt12rp=rt12rp+3;} if(rtask122 === 8) {rtask12=rtask12+12; rt12rp=rt12rp+5;} if(rtask122 === 9) {rtask12=rtask12+14; rt12rp=rt12rp+7;}
+            if(rtask123 === 4) {rtask12=rtask12+4; rt12rp=rt12rp+3;} if(rtask123 === 5) {rtask12=rtask12+5; rt12rp=rt12rp+3;} if(rtask123 === 6) {rtask12=rtask12+6; rt12rp=rt12rp+3;} if(rtask123 === 7) {rtask12=rtask12+9; rt12rp=rt12rp+3;} if(rtask123 === 8) {rtask12=rtask12+12; rt12rp=rt12rp+5;} if(rtask123 === 9) {rtask12=rtask12+14; rt12rp=rt12rp+7;}
+            total = multiplier*rtask1*3+multiplier*rtask2*5+multiplier*rtask3*15+multiplier*su5*5+multiplier*add*6+multiplier*v1*5+multiplier*rtask4*15+multiplier*rtask5*5+multiplier*best*5+multiplier*rtask5n*3+multiplier*rtask6*4+multiplier*rtask7*7+multiplier*rtask8*15+multiplier*rtask11*8+multiplier*rtask12+multiplier*ntask1*12+multiplier*ntask2*10+multiplier*ntask3*8+multiplier*ntask4*4;
+            total = Math.round(total);
+            totalrp = rtask1*5+rtask2*3+rtask3*5+hour2*3+rtask4*5+rtask5*10+rtask6*3+rtask7*7+rtask8*8+rtask11*2+rt12rp+ntask1*10+ntask2*4+ntask3*6+ntask4*2;
+            var rt1 = 0; var rt2 = 0; var rt3 = 0; var sup5 = 0; var addd = 0; var v11 = 0; var rt4 = 0; var rt5 = 0; var besti = 0; var rt5n = 0; var rt6 = 0; var rt7 = 0; var rt8 = 0; var rt11 = 0; var rt12 = 0; var nt1 = 0; var nt2 = 0; var nt3 = 0; var nt4 = 0; var rprt1 = 0; var rprt2 = 0; var rprt3 = 0; var rp1h = 0; var rprt4 = 0; var rprt5 = 0; var rprt6 = 0; var rprt7 = 0; var rprt8 = 0; var rprt11 = 0; var rpnt1 = 0; var rpnt2 = 0; var rpnt3 = 0; var rpnt4 = 0;
+            if(rtask1>0) rt1 = multiplier*rtask1*3; rprt1 = rtask1*5; if(rtask2>0) rt2 = multiplier*rtask2*5; rprt2 = rtask2*3; if(rtask3>0) rt3 = multiplier*rtask3*15; rprt3 = rtask3*5; if(su5>0) sup5 = multiplier*su5*5; if(add>0) addd = multiplier*add*6; var hour1 = 0; hour1=Math.floor(add/2); rp1h = hour1*3; if(v1>0) v11 = multiplier*v1*5; if(rtask4>0) rt4 = multiplier*rtask4*15; rprt4 = rtask4*5; if(rtask5>0) rt5 = multiplier*rtask5*5; rprt5 = rtask5*10; if(best>0) besti = multiplier*best*5; if(rtask5n>0) rt5n = multiplier*rtask5n*3; if(rtask6>0) rt6 = multiplier*rtask6*4; rprt6 = rtask6*3; if(rtask7>0) rt7 = multiplier*rtask7*7; rprt7 = rtask7*7; if(rtask8>0) rt8 = multiplier*rtask8*15; rprt8 = rtask8*8; if(rtask11>0) rt11=multiplier*rtask11*8; rprt11=rtask11*2; if(rtask12>0) rt12=multiplier*rtask12; if(ntask1>0) nt1 = multiplier*ntask1*12; rpnt1 = ntask1*10; if(ntask2>0) nt2 = multiplier*ntask2*10; rpnt2 = ntask2*4; if(ntask3>0) nt3 = multiplier*ntask3*8; rpnt3 = ntask3*6; if(ntask4>0) nt4 = multiplier*ntask4*4; rpnt4 = ntask4*2;
         }
-        let data = ''+name+' ('+rank+')'+'\r\r\n'+'Total points - '+total+'\r\n'+'Total rp - '+totalrp+'\r\n\r\n'+'+'+rt1+' points '+'+'+rprt1+' rp '+'for '+rtask1+'x rtask 1'+'\r\n'+'+'+rt2+' points '+'+'+rprt2+' rp'+' for '+rtask2+'x rtask 2'+'\r\n'+'+'+rt3+' points '+'+'+rprt3+' rp'+' for '+rtask3+'x rtask 3'+'\r\n'+'+'+sup5+' for additional 5 supports'+'\r\n'+'+'+addd+' for additional 30 minutes'+'\r\n'+'+'+rp1h+' rp'+' for 1h in the support'+'\r\n'+'+'+v11+' for ending support in a 1v1'+'\r\n'+'+'+rt4+' points '+'+'+rprt4+' rp'+' for '+rtask4+'x rtask 4'+'\r\n'+'+'+rt5+' points '+'+'+rprt5+' rp for '+rtask5+'x rtask 5'+'\r\n'+'+'+besti+' for being the best on the joint training'+'\r\n'+'+'+rt5n+' for '+rtask5n+'x rtask 5 not full duration'+'\r\n'+'+'+rt6+' points '+'+'+rprt6+' rp'+' for '+rtask6+'x rtask 6'+'\r\n'+'+'+rt7+' points '+'+'+rprt7+' rp'+' for '+rtask7+'x rtask 7'+'\r\n'+'+'+rt8+' points '+'+'+rprt8+' rp'+' for '+rtask8+'x rtask 8'+'\r\n'+'+'+nt1+' points '+'+'+rpnt1+' rp'+' for ntask 1'+'\r\n'+'+'+nt2+' points '+'+'+rpnt2+' rp'+' for ntask 2'+'\r\n'+'+'+nt3+' points '+'+'+rpnt3+' rp'+' for ntask 3'+'\r\n'+'+'+nt4+' points '+'+'+rpnt4+' rp'+' for ntask 4'+'\r\n'+'================================='+'\r\n';
+        let data = ''+name+' ('+rank+')'+'\r\r\n'+'Total points - '+total+' '+'Total rp - '+totalrp+'\r\n\r\n'+'+'+rt1+' points '+'+'+rprt1+' rp '+'for '+rtask1+'x rtask 1'+'\r\n'+'+'+rt2+' points '+'+'+rprt2+' rp'+' for '+rtask2+'x rtask 2'+'\r\n'+'+'+rt3+' points '+'+'+rprt3+' rp'+' for '+rtask3+'x rtask 3'+'\r\n'+'+'+sup5+' for additional 5 supports'+'\r\n'+'+'+addd+' for additional 30 minutes'+'\r\n'+'+'+rp1h+' rp'+' for 1h in the support'+'\r\n'+'+'+v11+' for ending support in a 1v1'+'\r\n'+'+'+rt4+' points '+'+'+rprt4+' rp'+' for '+rtask4+'x rtask 4'+'\r\n'+'+'+rt5+' points '+'+'+rprt5+' rp for '+rtask5+'x rtask 5'+'\r\n'+'+'+besti+' for being the best on the joint training'+'\r\n'+'+'+rt5n+' for '+rtask5n+'x rtask 5 not full duration'+'\r\n'+'+'+rt6+' points '+'+'+rprt6+' rp'+' for '+rtask6+'x rtask 6'+'\r\n'+'+'+rt7+' points '+'+'+rprt7+' rp'+' for '+rtask7+'x rtask 7'+'\r\n'+'+'+rt8+' points '+'+'+rprt8+' rp'+' for '+rtask8+'x rtask 8'+'\r\n'+'+'+rt11+' points '+'+'+rprt11+' rp for '+rtask11+'x rtask11'+'\r\n'+'+'+rt12+' points +'+rt12rp+' rp for '+rt12count+'x rtask12'+'\r\n'+'+'+nt1+' points '+'+'+rpnt1+' rp'+' for ntask 1'+'\r\n'+'+'+nt2+' points '+'+'+rpnt2+' rp'+' for ntask 2'+'\r\n'+'+'+nt3+' points '+'+'+rpnt3+' rp'+' for ntask 3'+'\r\n'+'+'+nt4+' points '+'+'+rpnt4+' rp'+' for ntask 4'+'\r\n'+'================================='+'\r\n';
         localStorage.setItem(j, data);
     }
             
@@ -398,8 +429,20 @@ function submit(){
                         c45 = '';
                     }
                 }
+                if(b=46){
+                    var c46=localStorage.getItem(b);
+                    if(c46 === null) {
+                        c46 = '';
+                    }
+                }
+                if(b=47){
+                    var c47=localStorage.getItem(b);
+                    if(c47 === null) {
+                        c47 = '';
+                    }
+                }
             }
-            result = c45.concat(c44,c43,c42,c41,c40,c39,c38,c37,c36,c35,c34,c33,c32,c31,c30,c29,c28,c27,c26,c25,c24,c23,c22,c21,c20,c19,c18,c17,c16,c15,c14,c13,c12,c11,c10,c9,c8,c7,c6,c5,c4,c3,c2,c1);
+            result = c45.concat(c47,c46,c45,c44,c43,c42,c41,c40,c39,c38,c37,c36,c35,c34,c33,c32,c31,c30,c29,c28,c27,c26,c25,c24,c23,c22,c21,c20,c19,c18,c17,c16,c15,c14,c13,c12,c11,c10,c9,c8,c7,c6,c5,c4,c3,c2,c1);
             console.log(result);
             const textToBLOB = new Blob([result], { type: 'text/plain' });
             const sFileName = 'comment.txt';
