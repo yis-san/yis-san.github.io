@@ -8,7 +8,7 @@ function more() {
   var rowId = row.id;
     
     
-    for (i = 0; i < 23; i++) { 
+    for (i = 0; i < 20; i++) { 
         var cell = row.insertCell(i);
         cell.id = i;
         cell.innerHTML = '<input type="text" id="s'+id+''+i+'" style="width: 65%;background-color: transparent;border: 0px;"">';
