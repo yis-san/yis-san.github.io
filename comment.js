@@ -111,8 +111,10 @@ function submit(){
             if(rank == "veteran"){
                 var hour2 = 0;
             hour2 = Math.floor(add/3);
+            var rt12rp = 0;
             var su5 = 0;
             su5 = Math.floor(rtask3/5);
+            var rt12count = 0; 
             total = multiplier*rtask1*15+multiplier*add*4+multiplier*su5*5+multiplier*v1*5+multiplier*rtask2*15+multiplier*rtask3*7+multiplier*best*5+multiplier*rtask4*5+multiplier*rtask5*7+multiplier*rtask6*10+multiplier*rtask9*10+multiplier*rtask10*2+multiplier*rtask11*3+multiplier*rtask12*7+multiplier*ntask1*12+multiplier*ntask2*10+multiplier*ntask3*8+multiplier*ntask4*4;
             total = Math.round(total);
             totalrp = rtask1*5+hour2*3+rtask2*4+rtask3*5+rtask4*3+rtask5*5+rtask6*7+rtask9*5+rtask11*1+rtask12*3+ntask1*10+ntask2*4+ntask3*6+ntask4*2;
@@ -123,8 +125,10 @@ function submit(){
             else if(rank == "member"){
                 var hour2 = 0;
             hour2 = Math.floor(add/3);
+            var rt12rp = 0;
             var su5 = 0;
             su5 = Math.floor(rtask3/5);
+            var rt12count = 0; 
             total = multiplier*rtask1*15+multiplier*add*4+multiplier*su5*5+multiplier*v1*5+multiplier*rtask2*15+multiplier*rtask3*7+multiplier*best*5+multiplier*rtask4*5+multiplier*rtask5*7+multiplier*rtask6*10+multiplier*rtask9*10+multiplier*rtask10*2+multiplier*rtask11*3+multiplier*rtask12*7+multiplier*ntask1*12+multiplier*ntask2*10+multiplier*ntask3*8+multiplier*ntask4*4;
             total = Math.round(total);
             totalrp = rtask1*5+hour2*3+rtask2*4+rtask3*5+rtask4*3+rtask5*5+rtask6*7+rtask9*5+rtask11*1+rtask12*3+ntask1*10+ntask2*4+ntask3*6+ntask4*2;
